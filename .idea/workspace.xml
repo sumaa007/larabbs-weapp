@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d6217f4-2c72-464c-b8b5-ba51cbd7a479" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.wpy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/base64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_footer_link.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_intro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_feedback.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_form.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_nav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_special.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_widget.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_z-index.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon_tabbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/pic_160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/pic_article.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/vcode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="7d6217f4-2c72-464c-b8b5-ba51cbd7a479" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +36,8 @@
       <file leaf-file-name="app.wpy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+            <state relative-caret-position="442">
+              <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -198,12 +178,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534312924672</updated>
       <workItem from="1534312934024" duration="5445000" />
-      <workItem from="1534322006370" duration="6711000" />
+      <workItem from="1534322006370" duration="7618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12156000" />
+    <option name="totallyTimeSpent" value="13063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -295,8 +275,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.wpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        <state relative-caret-position="442">
+          <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
         </state>
       </provider>
     </entry>
