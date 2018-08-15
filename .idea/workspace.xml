@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6217f4-2c72-464c-b8b5-ba51cbd7a479" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.wepycache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.wpy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.wpy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/base64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_footer_link.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_intro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_feedback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_form.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_nav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_special.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_widget.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_nav_z-index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon_tabbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/pic_160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/pic_article.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/vcode.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.wpy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.wpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/user.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state relative-caret-position="962">
+              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#image#0;n#view#0;n#navigator#0;n#view#0;n#view#0;n#view#1;n#view#2;n#view#1;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#image#0;n#view#0;n#navigator#1;n#view#0;n#view#0;n#view#1;n#view#2;n#view#1;n#template#0;n#!!top" expanded="true" />
@@ -47,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.wpy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.wpy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1612">
-              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+            <state relative-caret-position="520">
+              <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,9 +119,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/app.wpy" />
         <option value="$PROJECT_DIR$/src/pages/index.wpy" />
         <option value="$PROJECT_DIR$/src/pages/user.wpy" />
+        <option value="$PROJECT_DIR$/src/app.wpy" />
       </list>
     </option>
   </component>
@@ -192,12 +198,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534312924672</updated>
       <workItem from="1534312934024" duration="5445000" />
-      <workItem from="1534322006370" duration="5880000" />
+      <workItem from="1534322006370" duration="6711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11325000" />
+    <option name="totallyTimeSpent" value="12156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -269,13 +275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.wpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1612">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index.wpy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -285,12 +284,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/user.wpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="962">
+          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#image#0;n#view#0;n#navigator#0;n#view#0;n#view#0;n#view#1;n#view#2;n#view#1;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#image#0;n#view#0;n#navigator#1;n#view#0;n#view#0;n#view#1;n#view#2;n#view#1;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
         </state>
       </provider>
     </entry>
