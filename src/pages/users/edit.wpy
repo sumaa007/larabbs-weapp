@@ -1,4 +1,10 @@
 <style lang="less">
+    .introduction {
+        height: 3.3em;
+    }
+    .error-message {
+        color: #E64340;
+    }
     .avatar {
         width: 80px;
         height: 80px;
@@ -11,12 +17,6 @@
         justify-content: center;
         align-items: center;
     }
-    .introduction {
-        height: 3.3em;
-    }
-    .error-message {
-        color: #E64340;
-    }
 </style>
 <template>
     <view class="page">
@@ -25,6 +25,7 @@
                 <view class="avatar-wrap">
                     <image class="avatar" src="{{ user.avatar }}" @tap="updateAvatar"/>
                 </view>
+                <!-- 填写姓名 -->
                 <view class="weui-cells__title">姓名</view>
                 <view class="weui-cells weui-cells_after-title">
                     <view class="weui-cell weui-cell_input">
@@ -87,11 +88,15 @@
         navigationBarTitleText: '修改个人信息'
       }
       data = {
+            // 用户信息
         user: null,
+            // 错误信息
         errors: null,
+            // 头像id
         avatarId: 0
       }
       async onShow() {
+            // 获取当前用户信息
         this.user = await this.$parent.getCurrentUser()
         this.$apply()
       }
@@ -101,7 +106,7 @@
         try {
           let formData = e.detail.value
 
-          // 当avatarId被设置过之后则增加到 avatar_image_id 中
+                // 当avatarId被设置过之后则增加到 avatar_image_id 中
           if (this.avatarId !== 0) {
             formData.avatar_image_id = this.avatarId
           }
@@ -112,13 +117,13 @@
             data: formData
           })
 
-          // 设置报错信息
+                // 设置报错信息
           if (editResponse.statusCode === 422) {
             this.errors = editResponse.data.errors
             this.$apply()
           }
 
-          // 请求成功，缓存用户数据
+                // 请求成功，缓存用户数据
           if (editResponse.statusCode === 200) {
             this.user = editResponse.data
             wepy.setStorageSync('user', editResponse.data)
@@ -137,41 +142,41 @@
             content: '服务器错误，请联系管理员'
           })
         }
-        methods = {
-          async updateAvatar () {
-            // 选择头像图片
-            let image = await wepy.chooseImage({count: 1})
+      }
+      methods = {
+        async updateAvatar () {
+                // 选择头像图片
+          let image = await wepy.chooseImage({count: 1})
 
-            try {
-              // 获取选择的图片
-              let avatar = image.tempFilePaths[0]
+          try {
+                    // 获取选择的图片
+            let avatar = image.tempFilePaths[0]
 
-              // 调用上传图片接口
-              let imageResponse = await api.updateFile({
-                url: 'images',
-                method: 'POST',
-                name: 'image',
-                formData: {
-                  type: 'avatar'
-                },
-                filePath: avatar
-              })
+                    // 调用上传图片接口
+            let imageResponse = await api.updateFile({
+              url: 'images',
+              method: 'POST',
+              name: 'image',
+              formData: {
+                type: 'avatar'
+              },
+              filePath: avatar
+            })
 
-              // 上传成功成功记录数据
-              if (imageResponse.statusCode === 201) {
-                // 小程序上传结果没有做 JSON.parse，需要手动处理
-                let responseData = JSON.parse(imageResponse.data)
-                this.user.avatar = responseData.path
-                this.avatarId = responseData.id
-                this.$apply()
-              }
-            } catch (err) {
-              console.log(err)
-              wepy.showModal({
-                title: '提示',
-                content: '服务器错误，请联系管理员'
-              })
+                    // 上传成功成功记录数据
+            if (imageResponse.statusCode === 201) {
+                        // 小程序上传结果没有做 JSON.parse，需要手动处理
+              let responseData = JSON.parse(imageResponse.data)
+              this.user.avatar = responseData.path
+              this.avatarId = responseData.id
+              this.$apply()
             }
+          } catch (err) {
+            console.log(err)
+            wepy.showModal({
+              title: '提示',
+              content: '服务器错误，请联系管理员'
+            })
           }
         }
       }
