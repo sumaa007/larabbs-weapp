@@ -22,7 +22,7 @@
         <view class="page__bd" >
             <view class="weui-cells weui-cells_after-title">
                 <!-- 已登录 -->
-                <navigator class="weui-cell" wx:if="{{ user }}" url>
+                <navigator class="weui-cell" wx:if="{{ user }}" url="/pages/users/edit">
                     <view class="weui-cell__hd avatar-wrap">
                         <image class="avatar" src="{{ user.avatar }}"/>
                     </view>
@@ -72,37 +72,37 @@
     import wepy from 'wepy'
     import api from '@/utils/api'
 
-    export default class User extends wepy.page {
-        config = {
-            navigationBarTitleText: '我的'
-        }
-        data = {
+    export default class UserMe extends wepy.page {
+      config = {
+        navigationBarTitleText: '我的'
+      }
+      data = {
             // 用户信息
-            user: null
-        }
-        async onShow() {
+        user: null
+      }
+      async onShow() {
             // 每次打开页面，获取当前用户信息
-            this.user = await this.$parent.getCurrentUser()
-            this.$apply()
-        }
-        methods = {
+        this.user = await this.$parent.getCurrentUser()
+        this.$apply()
+      }
+      methods = {
             // 退出登录方法
-            async logout (e) {
-                try {
-                    let logoutResponse = await api.logout()
+        async logout (e) {
+          try {
+            let logoutResponse = await api.logout()
 
-                    if (logoutResponse.statusCode === 204) {
-                        this.user = null
-                        this.$apply()
-                    }
-                } catch (err) {
-                    console.log(err)
-                    wepy.showModal({
-                        title: '提示',
-                        content: '服务器错误，请联系管理员'
-                    })
-                }
+            if (logoutResponse.statusCode === 204) {
+              this.user = null
+              this.$apply()
             }
-        };
+          } catch (err) {
+            console.log(err)
+            wepy.showModal({
+              title: '提示',
+              content: '服务器错误，请联系管理员'
+            })
+          }
+        }
+      };
     }
 </script>
