@@ -82,79 +82,79 @@
     import topicList from '@/components/topicList'
 
     export default class TopicIndex extends wepy.page {
-        config = {
-            enablePullDownRefresh: true
-        }
-        data = {
-            topics: [],
-            categories: [],
-            categoryOpen: false,
-            currentCategory: {},
-            requestData: {}
-        }
+      config = {
+        enablePullDownRefresh: true
+      }
+      data = {
+        topics: [],
+        categories: [],
+        categoryOpen: false,
+        currentCategory: {},
+        requestData: {}
+      }
         // 使用 topicList 组件
-        components = {
-            topiclist: topicList
-        }
-        computed = {
+      components = {
+        topiclist: topicList
+      }
+      computed = {
             // 当前选中的分类id
-            currentCategoryId () {
-                return this.currentCategory.id || 0
-            }
+        currentCategoryId () {
+          return this.currentCategory.id || 0
         }
+      }
         // 获取分类数据
-        async getCategories() {
-            let categories = wepy.getStorageSync('categories')
+      async getCategories() {
+        let categories = wepy.getStorageSync('categories')
 
-            if (!categories) {
-                try {
-                    let categoriesResponse = await api.request('categories')
-                    if (categoriesResponse.statusCode === 200) {
-                        categories = categoriesResponse.data.data
+        if (!categories) {
+          try {
+            let categoriesResponse = await api.request('categories')
+            if (categoriesResponse.statusCode === 200) {
+              categories = categoriesResponse.data.data
                         // 缓存到 sotrage 中
-                        wepy.setStorageSync('categories', categories)
-                    }
-                } catch (err) {
-                    wepy.showModal({
-                        title: '提示',
-                        content: '服务器错误，请联系管理员'
-                    })
-                }
+              wepy.setStorageSync('categories', categories)
             }
+          } catch (err) {
+            wepy.showModal({
+              title: '提示',
+              content: '服务器错误，请联系管理员'
+            })
+          }
+        }
 
-            this.categories = categories
-            this.$apply()
-        }
-        onLoad() {
+        this.categories = categories
+        this.$apply()
+      }
+      onLoad() {
             // 获取分类数据
-            this.getCategories()
+        this.getCategories()
             // 调用组件的 reload 方法
-            this.$invoke('topiclist', 'reload')
-        }
-        async onPullDownRefresh() {
+        this.$invoke('topiclist', 'reload')
+      }
+      async onPullDownRefresh() {
             // 调用组件的 reload 方法
-            await this.$invoke('topiclist', 'reload')
-            wepy.stopPullDownRefresh()
-        }
-        onReachBottom () {
+        await this.$invoke('topiclist', 'reload')
+        wepy.stopPullDownRefresh()
+      }
+      onReachBottom () {
             // 调用组件的 loadMore 方法
-            this.$invoke('topiclist', 'loadMore')
-        }
-        methods = {
+        this.$invoke('topiclist', 'loadMore')
+      }
+      methods = {
             // 切换分类列表展示
-            toggle () {
-                this.categoryOpen = !this.categoryOpen
-            },
+        toggle () {
+          this.categoryOpen = !this.categoryOpen
+        },
             // 选择分类重新加载
-            async changeCatgory (id = 0) {
-                this.currentCategory = id ? this.categories.find(category => category.id === id) : {}
-                this.categoryOpen = false
-                this.$apply()
-                this.requestData.category_id = this.currentCategoryId
+        async changeCatgory (id = 0) {
+          this.currentCategory = id ? this.categories.find(category => category.id === id) : {}
+          this.categoryOpen = false
+          this.$apply()
+          this.requestData.category_id = this.currentCategoryId
 
                 // 调用组件的 reload 方法
-                this.$invoke('topiclist', 'reload')
-            }
+          this.$invoke('topiclist', 'reload')
         }
+      }
     }
 </script>
