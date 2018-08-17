@@ -94,7 +94,7 @@
         requestData: {}
       }
 
-        mixins = [unreadCount]
+      mixins = [unreadCount]
 
         // 使用 topicList 组件
       components = {

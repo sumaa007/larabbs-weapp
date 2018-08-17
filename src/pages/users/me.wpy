@@ -85,7 +85,7 @@
         user: null
       }
 
-        mixins = [unreadCount]
+      mixins = [unreadCount]
 
       async onShow() {
             // 每次打开页面，获取当前用户信息
