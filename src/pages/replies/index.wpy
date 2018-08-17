@@ -13,6 +13,10 @@
         bottom: 30px;
         right: 30px;
     }
+    .reply-delete {
+        width: 20px;
+        height: 20px;
+    }
 </style>
 <template>
     <view class="page">
@@ -34,6 +38,7 @@
                                     <view class="weui-media-box__info__meta">{{ reply.created_at_diff }}</view>
                                 </view>
                             </view>
+                            <image wx:if="{{ reply.can_delete }}" class="reply-delete" src="/images/trash.png" @tap="deleteReply({{ reply.topic_id }}, {{ reply.id }})"/>
                         </view>
                     </repeat>
                     <view class="weui-loadmore weui-loadmore_line" wx:if="{{ noMoreData }}">
@@ -66,13 +71,6 @@
         this.requestData.url = 'topics/' + options.topic_id + '/replies'
         this.getReplies()
       }
-      // onShow() {
-      //   this.$parent.checkRefreshPages(this.getCurrentPages().pop().route, () => {
-      //     this.noMoreData = false
-      //     this.page = 1
-      //     this.getReplies(true)
-      //   })
-      // }
       async onShow() {
         this.$parent.checkRefreshPages(this.getCurrentPages().pop().route, () => {
           this.getTopic(this.topic.id)

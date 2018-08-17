@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6217f4-2c72-464c-b8b5-ba51cbd7a479" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/notifications/index.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/notifications/index.wpy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/me.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/me.wpy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mixins/replyMixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mixins/replyMixin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/replies/index.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/replies/index.wpy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,8 +59,8 @@
       <file leaf-file-name="index.wpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/replies/index.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1846">
-              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+            <state relative-caret-position="429">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.wpy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.wpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/notifications/index.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+            <state relative-caret-position="535">
+              <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#view#0;n#navigator#0;n#view#0;n#view#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#view#1;n#navigator#0;n#view#0;n#view#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
@@ -117,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="replyMixin.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="replyMixin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mixins/replyMixin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1950">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="-172">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -133,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form</find>
       <find>submit</find>
       <find>图片验证码</find>
       <find>async</find>
@@ -151,7 +150,6 @@
       <find>currentCategoryId</find>
       <find>onLoad</find>
       <find>canDelete</find>
-      <find>repeat</find>
       <find>onShow</find>
       <find>class=&quot;weui-article</find>
       <find>weui-panel__ft</find>
@@ -163,6 +161,8 @@
       <find>updateUnreadCount</find>
       <find>api</find>
       <find>=</find>
+      <find>markAsRead</find>
+      <find>repeat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,16 +182,16 @@
         <option value="$PROJECT_DIR$/src/components/topicList.wpy" />
         <option value="$PROJECT_DIR$/src/pages/topics/userIndex.wpy" />
         <option value="$PROJECT_DIR$/src/pages/users/show.wpy" />
-        <option value="$PROJECT_DIR$/src/mixins/replyMixin.js" />
         <option value="$PROJECT_DIR$/src/pages/replies/userIndex.wpy" />
         <option value="$PROJECT_DIR$/src/pages/topics/show.wpy" />
         <option value="$PROJECT_DIR$/src/pages/replies/create.wpy" />
-        <option value="$PROJECT_DIR$/src/pages/replies/index.wpy" />
         <option value="$PROJECT_DIR$/src/mixins/unreadCount.js" />
         <option value="$PROJECT_DIR$/src/pages/topics/index.wpy" />
         <option value="$PROJECT_DIR$/src/app.wpy" />
         <option value="$PROJECT_DIR$/src/pages/users/me.wpy" />
         <option value="$PROJECT_DIR$/src/pages/notifications/index.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/replies/index.wpy" />
+        <option value="$PROJECT_DIR$/src/mixins/replyMixin.js" />
       </list>
     </option>
   </component>
@@ -204,7 +204,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -250,6 +250,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="larabbs-weapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="larabbs-weapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="notifications" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="larabbs-weapp" type="b2602c69:ProjectViewProjectNode" />
@@ -327,7 +334,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53645000" />
+    <option name="totallyTimeSpent" value="54924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -596,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mixins/replyMixin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/replies/userIndex.wpy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -633,13 +630,6 @@
           <folding>
             <element signature="e#810#833#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/replies/index.wpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1846">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -698,12 +688,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/notifications/index.wpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+        <state relative-caret-position="535">
+          <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#view#0;n#navigator#0;n#view#0;n#view#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#view#1;n#navigator#0;n#view#0;n#view#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#2099#2122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/replies/index.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mixins/replyMixin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
